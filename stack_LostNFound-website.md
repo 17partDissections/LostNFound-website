@@ -1,4 +1,4 @@
-# Стек LostNFound-api
+# Стек LostNFound-website
 
 ### Языки программирования
 - **Java**
@@ -8,6 +8,7 @@
 
 ### Программы и утилиты
 - **XAMPP**
+- **FileZilla**
 
 ### Источники документации и туториалов
 - **<a target="_blank" href="https://tsukihimearchive.ru/">Tsukihime Archive website by Andrew Q17pD</a>**
