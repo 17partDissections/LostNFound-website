@@ -173,6 +173,3 @@ body::after {
 .content-card span { font-size: 12px; }
 .content-card:hover { background: var(--colorPrimary); color: var(--colorBackground); }
 .content-card:hover strong { color: var(--colorBackground); }
-
-.mobile-menu-button, .mobile-close-button { display: none; }
-.sidebar-backdrop { display: none; }
