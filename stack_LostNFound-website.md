@@ -1,7 +1,7 @@
 # Стек LostNFound-website
 
 ### Языки программирования
-- **Java**
+- **JavaScript**
 
 ### Среды разработки
 - **Notepad++**
