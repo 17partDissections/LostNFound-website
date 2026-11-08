@@ -1,19 +1,19 @@
 :root {
-  --colorBackground: #101010;
-  --colorText: #ffffff;
-  --colorLink: #00ffff;
-  --colorPrimary: #00ffff;
-  --colorMainPanel: #101010;
-  --colorBorder: #101010;
-  --colorShadow: #00ffff;
-  --colorMuted: #999999;
-  --colorOverlay: #10101099;
-  --colorCardBg: #333333;
-  --sidebarBackground: #101010;
-  --sidebarBlock: #00ffff;
-  --sidebarText: #00ffff;
+  --colorBackground: #121212;
+  --colorText: #E2E8F0;
+  --colorLink: #4FD1C5;
+  --colorPrimary: #4FD1C5;
+  --colorMainPanel: #121212;
+  --colorBorder: #2D3748;
+  --colorShadow: #4FD1C5;
+  --colorMuted: #94A3B8;
+  --colorOverlay: #12121299;
+  --colorCardBg: #1E1E1E;
+  --sidebarBackground: #121212;
+  --sidebarBlock: #4FD1C5;
+  --sidebarText: #4FD1C5;
   --widthSidebar: 0px;
-  --imageBackground: url('images/background.jpg');
+  --imageBackground: url('background.png');
 }
 
 @font-face {

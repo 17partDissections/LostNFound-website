@@ -16,14 +16,26 @@ document.addEventListener("DOMContentLoaded", async () => {
         </p>
       </div>
       <div class="sidebar-bottom">
-        <!--<label for="themeSwitcher">Тема</label>
+        <label for="themeSwitcher">Тема</label>
         <select id="themeSwitcher">
           <option value="dark">Тёмная</option>
           <option value="light">Светлая</option>
-        </select>-->
-        <!--<a href="https://github.com/17partDissections/LostNFound-website" target="_blank">GitHub</a>-->
+        </select>
       </div>
     </div>
   `;
+
   document.getElementById("sidebar").innerHTML = sidebar;
+
+  const themeSwitcher = document.getElementById("themeSwitcher");
+  const savedTheme = localStorage.getItem("theme") || "dark";
+
+  document.documentElement.dataset.theme = savedTheme;
+  themeSwitcher.value = savedTheme;
+
+  themeSwitcher.addEventListener("change", () => {
+    const theme = themeSwitcher.value;
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("theme", theme);
+  });
 });

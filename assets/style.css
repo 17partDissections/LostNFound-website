@@ -1,19 +1,34 @@
 :root {
-  --colorBackground: #101010;
-  --colorText: #ffffff;
-  --colorLink: #00ffff;
-  --colorPrimary: #00ffff;
-  --colorMainPanel: #101010;
-  --colorBorder: #101010;
-  --colorShadow: #00ffff;
-  --colorMuted: #999999;
-  --colorOverlay: #10101099;
-  --colorCardBg: #333333;
-  --sidebarBackground: #101010;
-  --sidebarBlock: #00ffff;
-  --sidebarText: #00ffff;
+  --colorBackground: #121212;
+  --colorText: #E2E8F0;
+  --colorLink: #4FD1C5;
+  --colorPrimary: #4FD1C5;
+  --colorMainPanel: #121212;
+  --colorBorder: #2D3748;
+  --colorShadow: #4FD1C5;
+  --colorMuted: #94A3B8;
+  --colorOverlay: #12121299;
+  --colorCardBg: #1E1E1E;
+  --sidebarBackground: #121212;
+  --sidebarBlock: #4FD1C5;
+  --sidebarText: #4FD1C5;
   --widthSidebar: 300px;
-  --imageBackground: url('images/background.jpg');
+  --imageBackground: url('images/background.png');
+}
+[data-theme="light"] {
+  --colorBackground: #F8FAFC;
+  --colorText: #0F172A;
+  --colorLink: #0891B2;
+  --colorPrimary: #0891B2;
+  --colorMainPanel: #F8FAFC;
+  --colorBorder: #E2E8F0;
+  --colorShadow: #0891B2;
+  --colorMuted: #64748B;
+  --colorOverlay: #F8FAFC99;
+  --colorCardBg: #FFFFFF;
+  --sidebarBackground: #F8FAFC;
+  --sidebarBlock: #0891B2;
+  --sidebarText: #0891B2;
 }
 
 @font-face {
@@ -61,6 +76,19 @@ body::after {
   color: var(--sidebarText);
   background: var(--sidebarBackground);
   border-right: 2px solid var(--sidebarBlock);
+}
+.sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+}
+.sidebar-bottom label {
+  color: var(--sidebarText);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .side-nav { display: grid; gap: 10px; }
@@ -173,3 +201,26 @@ body::after {
 .content-card span { font-size: 12px; }
 .content-card:hover { background: var(--colorPrimary); color: var(--colorBackground); }
 .content-card:hover strong { color: var(--colorBackground); }
+
+#themeSwitcher {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--colorPrimary);
+  outline: none;
+  background: var(--colorBackground);
+  color: var(--colorPrimary);
+  font-family: "HirroSans";
+  font-size: 18px;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+#themeSwitcher:hover {
+  background: var(--colorPrimary);
+  color: var(--colorBackground);
+}
+
+#themeSwitcher option {
+  background: var(--colorBackground);
+  color: var(--colorText);
+}
