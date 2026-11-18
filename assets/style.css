@@ -198,6 +198,7 @@ body::after {
 }
 
 .content-card strong { font-size: 24px; }
+.content-card p { font-size: 16px; }
 .content-card span { font-size: 12px; }
 .content-card:hover { background: var(--colorPrimary); color: var(--colorBackground); }
 .content-card:hover strong { color: var(--colorBackground); }
